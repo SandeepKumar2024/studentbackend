@@ -221,7 +221,7 @@ const forgotPassword = async (req, res) => {
 
     await transporter.sendMail({
       to: user.email.toString(),
-      html: `<p>Password reset link :Click  <a href="http://localhost:3000/user/password/reset/${tokenEncode}"> the link</a></p>`,
+      html: `<p>Password reset link :Click  <a href="https://master--monumental-baklava-4e8cb4.netlify.app/user/password/reset/${tokenEncode}"> the link</a></p>`,
       subject: "Password reset link",
     });
 
